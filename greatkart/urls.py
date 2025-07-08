@@ -25,4 +25,5 @@ urlpatterns = [
     path('', views.home , name='home'),
     #redirecting to store app url.py file
     path('store/', include('store.urls')), 
+    path('cart/' , include('carts.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
